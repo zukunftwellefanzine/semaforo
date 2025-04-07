@@ -5,7 +5,6 @@ Este proyecto es una simulación de un semáforo implementado con **React**.
 Utiliza hooks como `useState` para manejar el estado de las luces (roja, amarilla y verde) y aplicar la lógica de cambio de color.  
 La interfaz se ha construido con **HTML** y **CSS** para representar visualmente el semáforo de forma clara e interactiva.
 
-![Demostración](./media/traffic_light.gif)
 
 ---
 
