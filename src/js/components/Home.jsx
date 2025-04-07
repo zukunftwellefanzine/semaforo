@@ -2,18 +2,31 @@ import React, { useState } from "react";
 
 //create your first component
 const Home = () => {
-  const [color, setColor] = useState("red");
+  // const [color, setColor] = useState("red");
+  const colors = ["red", "yellow", "green", "blue"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const color = colors[currentIndex];
+
+  // const handleClickColor = () => {
+  //   if (color === "red") {
+  //     setColor("yellow");
+  //   } else if (color === "yellow") {
+  //     setColor("green");
+  //   } else if (color === "green") {
+  //     setColor("blue");
+  //   } else {
+  //     setColor("red");
+  //   }
+  // };
 
   const handleClickColor = () => {
-    if (color === "red") {
-      setColor("yellow");
-    } else if (color === "yellow") {
-      setColor("green");
-    } else if (color === "green") {
-      setColor("blue");
-    } else {
-      setColor("red");
+    let nextIndex = currentIndex + 1;
+
+    if (nextIndex >= colors.length) {
+      nextIndex = 0;
     }
+
+    setCurrentIndex(nextIndex);
   };
   return (
     <div
@@ -54,7 +67,7 @@ const Home = () => {
             }}
           ></div>
           <div
-            className="rounded-circle"
+            className="rounded-circle mb-2"
             style={{
               width: "30px",
               height: "30px",
