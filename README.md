@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # semaforo
-=======
+
 # Hello World with React boilerplate
 
 Start coding a react application
