@@ -94,8 +94,7 @@ const Home = () => {
         Click me!
       </a>
       <p>
-        Guide by <a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-        love!
+        Guide by <a href="http://www.4geeksacademy.com">4Geeks Academy</a>
       </p>
     </div>
   );
